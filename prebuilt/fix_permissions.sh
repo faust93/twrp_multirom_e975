@@ -194,7 +194,7 @@ fp_start()
          DATAMOUNT=1
       fi
       
-      if $TEST -e /dev/block/mmcblk0p2 && $TEST $( $GREP -c " $SD_EXT_DIRECTORY " "/proc/mounts" ) -eq 0; then
+      if $TEST -e /dev/block/mmcblk0p7 && $TEST $( $GREP -c " $SD_EXT_DIRECTORY " "/proc/mounts" ) -eq 0; then
          $MOUNT $SD_EXT_DIRECTORY > /dev/null 2>&1
          SYSSDMOUNT=1
       fi
